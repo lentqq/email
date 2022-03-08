@@ -1,0 +1,19 @@
+{
+  "name": "tracker-bot-excercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.14.2"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/top.js --ui bdd --timeout 15000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "mocha": "^4.0.1",
+    "string": "^3.3.3"
+  }
+}

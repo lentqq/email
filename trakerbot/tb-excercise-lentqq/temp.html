@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta content="width=device-width" name="viewport" />
+   <title>Kmart Shipping Confirmation</title>
+   <style type="text/css"> @media only screen and (max-device-width: 768px) {
+td[class="mobi-legal-text"] a {color:#acacac; text-decoration:none;}
+[class~="no_link"] a {color:#001733 !important; text-decoration:none !important;}
+[class~="no_link2"] a {color:#666666 !important; text-decoration:none !important;}
+}
+@media only screen and (max-device-width: 400px) {
+table[class="content-bin-wrap"] {width:318px !important;}
+
+[class~="no_link"] a {color:#001733 !important; text-decoration:none !important;}
+[class~="no_link2"] a {color:#666666 !important; text-decoration:none !important;}
+td[class="frame-wrap-padd"] {padding:0px !important;}
+table[class="content-wrapper"] {width:318px !important;}
+td[class="body-padding"] {padding:15px 5px !important;}
+img {-ms-interpolation-mode:bicubic !important; max-width:308px !important; height: !important;}
+img[class="half"] {-ms-interpolation-mode:bicubic !important; max-width:154px !important; height: !important;}
+[class~="stack"] {display:block !important;}
+[class~="hide"] {display:none !important;}
+
+/* Header */
+table[class="header"] {width:318px !important;}
+table[class="header"] td[class="hide"] {display:none !important;}
+table[class="header"] td[class~="Rpad25"] {padding-right:20px !important;}
+table[class="header"] td[class~="font10"] {font-size:10px !important; line-height:10px !important;}
+table[class="header"] td[class~="w20"] {width:20px !important;}
+table[class="header"] img[class="logo"] {-ms-interpolation-mode:bicubic; width:63px !important; height:auto;}
+table[class="header"] img[class="headImg"] {-ms-interpolation-mode:bicubic; width:25px !important; height:auto;}
+/* Header End */
+/* Footer */
+table[class="footer"] {width:318px !important;}
+table[class="footer"] td[class="hide"] {display:none !important;}
+table[class="footer"] td[class~="block"] {display:block !important;}
+table[class="footer"] td[class~="Bpad"] {padding-bottom:25px !important;}
+table[class="footer"] td[class~="font10"] {font-size:10px !important;}
+table[class="footer"] td[class~="textCenter"] {text-align:center !important;}
+table[class="footer"] td[class="vspacer"] {width:35px !important;}
+span[class="footerNoStyle"] a {color:#acacac! important; text-decoration:none !important;}
+/* Footer End */
+
+/**** SHARED CSS ****/
+[class~="100percent"] {width:100% !important;}
+[class~="stack"] {display:block !important;}
+[class~="hide"] {display:none !important;}
+[class~="left"] {text-align:left !important;}
+[class~="right"] {text-align:right !important;}
+[class~="center"] {text-align:center !important;}
+[class~="top"] {vertical-align:top !important;}
+[class~="middle"] {vertical-align:middle !important;}
+[class~="bottom"] {vertical-align:bottom !important;}
+[class~="12px"] {font-size:12px !important;}
+[class~="13px"] {font-size:13px !important;}
+[class~="14px"] {font-size:14px !important;}
+[class~="15px"] {font-size:15px !important;}
+[class~="16px"] {font-size:16px !important;}
+[class~="19px"] {font-size:19px !important;}
+[class~="25px"] {font-size:25px !important;}
+[class~="30px"] {font-size:30px !important;}
+[class~="nopad"] {padding:0px !important;}
+[class~="Tpad0"] {padding-top:0px !important;}
+[class~="Tpad5"] {padding-top:5px !important;}
+[class~="Tpad15"] {padding-top:15px !important;}
+[class~="Tpad35"] {padding-top:35px !important;}
+[class~="Bpad0"] {padding-bottom:0px !important;}
+[class~="Bpad10"] {padding-bottom:10px !important;}
+[class~="Bpad15"] {padding-bottom:15px !important;}
+[class~="Bpad25"] {padding-bottom:25px !important;}
+[class~="Rpad0"] {padding-right:0px !important;}
+[class~="Rpad5"] {padding-right:5px !important;}
+[class~="Rpad10"] {padding-right:10px !important;}
+[class~="Rpad15"] {padding-right:15px !important;}
+[class~="Lpad1"] {padding-left:1px !important;}
+[class~="Lpad5"] {padding-left:5px !important;}
+[class~="Lpad10"] {padding-left:10px !important;}
+[class~="LRpad8"] {padding-left:8px !important; padding-right:8px !important;}
+[class~="blueheader"] {font-size:14px !important; color:#ffffff !important; background-color:#7c0505 !important; padding:10px 8px !important;}
+[class~="Tborder0"] {border-top:0px !important;}
+[class~="Bborder5"] {border-bottom:5px solid #eeeeee !important;}
+[class~="Tborder5"] {border-top:5px solid #eeeeee !important;}
+/* Hide from desktop. */
+[class~="mobileshow"] { display:block !important; margin:0 !important; padding:0 !important; overflow:visible !important; width: !important; max-height:inherit !important; height: !important; }
+.deliveryImg{-ms-interpolation-mode:bicubic; width:160px !important; height:auto;}
+* [class~="mheader"] {font-size:13px !important; color:#001733 !important; border-bottom:1px dotted #cccccc !important; !important; padding:10px 0px !important;}  
+* [class~="mheaderL"] {font-size:13px !important; color:#001733 !important; border-bottom:1px dotted #cccccc !important; !important; padding:10px 0px 10px 10px !important;} 
+* [class~="mheaderR"] {font-size:13px !important; color:#001733 !important; border-bottom:1px dotted #cccccc !important; !important; padding:10px 10px 10px 0px !important;}
+
+
+	/* SYW Module */
+	table[class="mobi-hero-POEMSYWModule"] {width:308px !important;}
+	table[class="mobi-hero-POEMSYWModule2"] {width:300px !important;}
+	table[class="mobi-hero-POEMSYWModule"] td[class~="block"] {display:block !important;}
+	table[class="mobi-hero-POEMSYWModule"] td[class="hide"], br[class="hide"] {display:none !important;}
+	table[class="mobi-hero-POEMSYWModule"] img {-ms-interpolation-mode:bicubic; max-width:308px !important; height:;}
+table[class="mobi-hero-1956MDShipConf"] {width:300px !important;}
+table[class="mobi-hero-1956MDShipConf"] td[class="stack"] {display:block !important;}
+table[class="mobi-hero-1956MDShipConf"] img {-ms-interpolation-mode:bicubic; max-width:300px !important; height:auto;}
+table[class="mobi-hero-1956MDShipConf"] img[class="half"] {-ms-interpolation-mode:bicubic; width:150px !important; height:auto;}
+
+	/* easy options - remaining - return tables */
+	table[class="mobi-hero-1853TrsOTbs"] {width:308px !important;}
+	table[class="mobi-hero-1853TrsOTbs"] td[class~="block"], span[class="block"] {display:block !important;}
+	table[class="mobi-hero-1853TrsOTbs"] td[class="hide"], br[class="hide"] {display:none !important;}
+	table[class="mobi-hero-1853TrsOTbs"] td[class~="Bpad15"] {padding-bottom:15px !important;}
+	table[class="mobi-hero-1853TrsOTbs"] td[class="TBBorder"] {border-top:1px dotted #cccccc !important; border-bottom:1px dotted #cccccc !important; padding:10px 0 10px 0 !important; height:auto !important; line-height:13px !important;}
+	table[class="mobi-hero-1853TrsOTbs"] td[class="text"] {font-size:13px !important; color:#333333 !important;}
+	table[class="mobi-hero-1853TrsOTbs"] img {-ms-interpolation-mode:bicubic; max-width:318px !important; height:auto;}
+	table[class="spacer10"], table[class="spacer10"] td, table[class="spacer10"] img {width:318px !important; height:10px !important;}
+
+/* cancel  */
+span[class="noLink1"] a {color:#666666 !important; text-decoration:none !important;}
+span[class="noLink2"] a {color:#001733 !important; text-decoration:none !important;}
+[class~="Bborder1"] {border-bottom:2px solid #cccccc !important;}
+.contentImg {-ms-interpolation-mode:bicubic; width:auto;height:auto; min-width:100%;}
+}
+
+   </style>
+</head>
+<body style="padding:0; margin:0; text-align:center;"><table cellpadding="0" cellspacing="0" style="border: 0px; padding: 0px; margin: 0px; position: absolute; display: none; float: left">
+<tr>
+<td height="1" style="font-size: 1px; line-height: 1px; padding: 0px;">
+<img height="1" width="1" style= "padding: 0px 0px; !important; margin: 0px 0px; font-size: 1px; line-height: 1px;" src="https://kmart.rsys2.net/pub/as?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXHkMX%3Dw&_ei_=Ei6lBgv3Y9G7NPsfBjP1M4D6ADnRItjcESfx4CdjiaGVrGT44rYAO2S33S5zU0_fykR_vLsREMrcfyDmVl2Eanzxgo9SJHojiDYE4v2Tg_h1SVGJZiDGuhFs6EmwTXxH80Q92DZE2SL-9hypdi6Mr-mc."></img>
+<img border="0" width="1" height="1" src="http://ib.adnxs.com/getuid?http://a.adrsp.net/dsp/ci/2/E96sMuYTFbCyEUB5uKY5ltL9jYzBLJKaciYAAF2LoWn0m1ojWei7IG9jQTZPqtx2EFw6VpZ0XNVoGg/%24UID"></img>
+</td>
+</tr>
+</table>
+
+<style type="text/css">.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} .ExternalClass *{line-height:123%} .outlook{line-height:125%} body{-webkit-font-smoothing:antialiased;}
+</style>
+
+<table border="0" cellpadding="0" cellspacing="0" class="frame-wrap" width="100%">
+   <tbody>
+      <tr>
+         <td align="center" class="frame-wrap-padd" style="padding:15px 0;" valign="top">
+         <table align="center" border="0" cellpadding="0" cellspacing="0" class="header" width="700">
+            <tbody>
+               <tr>
+                  <td align="center" valign="top"><!-- Snippet -->
+                  <table border="0" cellpadding="0" cellspacing="0" class="header" width="700">
+                     <tbody>
+                        <tr>
+                           <td align="left" class="hide" style="font-size:11px; font-weight:bold; color:#acacac; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; padding:12px 0px 14px 0px;" valign="bottom"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUUDDTT&amp;_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#001733; text-decoration:none;">Items in order 990282917 have shipped!</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <!-- Snippet End --><!-- start header/navigation -->   <!-- Logo -->
+	<table class="header" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#cc1414">
+		<tr>
+			<td class="hide" align="left" valign="top" width="10">&nbsp;</td>
+			<td align="left" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUUDDWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img class="logo" border="0" style="display:block;" src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/2015KM_LOGO_UPDATEC.jpg" alt="Kmart" width="80" height="82"></a></td>
+			<td align="right" valign="middle" style="vertical-align:middle; padding:0 10px 0 0;">
+			
+            
+            <table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="font10" align="right" valign="middle" style="font-size:13px; font-weight:bold; color:#ffffff; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; padding:0 0 0 0;"><strong>Have Questions?</strong></td>
+</tr>
+<tr>
+<td class="font9" align="right" valign="middle" style="font-size:12px; font-weight:bold; color:#ffffff; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; padding:0 0 0 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUUDDAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#ffffff;"><strong><u>VIEW CUSTOMER SERVICE</u></strong></a></td>
+</table>
+            
+            
+			</td>
+		</tr>
+	</table>
+	<!-- Logo End -->			
+
+      <!-- Nav -->
+			<table class="header" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="bottom" bgcolor="#a61111" style="padding:10px 0px 10px 0px;">
+                	<table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="font10" align="center" valign="middle" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;"><a style="color:#ffffff; text-decoration:none;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUUDDCT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">CLOTHING</a></td>
+                      <td class="font10 w20" align="center" valign="middle" width="60">&nbsp;</td>
+                      <td class="font10" align="center" valign="middle" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;"><a style="color:#ffffff; text-decoration:none;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRRRT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">SHOES</a></td>
+                      <td class="font10 w20" align="center" valign="middle" width="60">&nbsp;</td>
+                      <td class="font10" align="center" valign="middle" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;"><a style="color:#ffffff; text-decoration:none;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRRTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">HOME</a></td>
+                      <td class="font10 w20" align="center" valign="middle" width="60">&nbsp;</td>
+                      <td class="font10" align="center" valign="middle" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;"><a style="color:#ffffff; text-decoration:none;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRRWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">ELECTRONICS</a></td>
+                      <td class="font10 w20" align="center" valign="middle" width="60">&nbsp;</td>
+                      <td class="font10" align="center" valign="middle" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;"><a style="color:#ffffff; text-decoration:none;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRRAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">TOYS</a></td>
+                      <td class="hide" align="center" valign="middle" width="60">&nbsp;</td>
+                      <td class="hide" align="center" valign="middle" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;"><a style="color:#ffffff; text-decoration:none;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRRCT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">CLEARANCE</a></td>
+                    </tr>
+                	</table>
+                </td>
+              </tr>
+            </table>
+		<!-- Nav End -->
+
+</td>
+               </tr>
+            </tbody>
+         </table>
+         <!-- hero wrapper/content bin wrapper -->
+
+         <table align="center" border="0" cellpadding="0" cellspacing="0" class="content-bin-wrap" width="700">
+            <tbody>
+               <tr>
+                  <td align="center" style="padding:10px 0 20px 0; border-bottom:1px solid #e2e2e2;" valign="top"><!-- *** START CAMPAIGN CONTENT -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="center"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRSRT&amp;_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img border="0" class="contentImg " height="233" src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_obu/ShipConfirmation/images/shippedWooHoo.jpg" width="700" /></a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="center" class="15px Tpad5 Rpad5 Lpad5 Bpad15" style="font-size:15px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:10px 20px 20px 20px; -webkit-text-size-adjust:none;" valign="middle"><span class="25px" style="font-size:25px;">Great news, Valentin!</span><br />
+                           <br />
+                            <span class="15px" style="font-size:17px;">The items listed below from<br />
+                           Order <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRSTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatAa5ppYltYEZBeV8oEfN5aFt640iULgRHUt_-tUHy3CRqwHXYCD5nPcyWMfverBvt-AmM6NS-bDyUAu1aq3M1lPETK3NbCuV8aquNm1TNTlZFzZnRmpkTnDPrr7L-iWA8zOpPlzV8FOLk6c7oo." style="color:#001733; text-decoration:underline;">#990282917</a>, placed on <span class="noLink2">Sat, Oct 08, 2016</span> have shipped!</span><br />
+                           <br />
+                           Since you are a valued Shop&nbsp;Your&nbsp;Way&reg;&nbsp;MAX member, your shipping is FREE!<br />
+                           <br />
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                    
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="left" class="blueheader" style="font-size:15px; color:#ffffff; background-color:#7c0505; padding:10px 13px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;" valign="middle">TRACK YOUR SHIPMENT:</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="left" bgcolor="#f7f7f7" class="13px LRpad8" style="font-size:15px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 10px 0px 10px; -webkit-text-size-adjust:none;" valign="middle"><br />
+                           Tracking number:  <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRSWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9tpYHlgEaPURKTcU-75CHgnpDimWcIUY29TU7G0rDv6iR2O8pN8-l4HScBRc3iWCf20BLJQE72tq-oLaMlOZ9avv71tCvg70QKkyqcYXU2R1hukRUiXy5Hcl1wHHRRCCcBrdbSV-IfWYwgq1OalYKA1NswbOkp2-e_gnVVBmSwR9nhCqJIVoAYHjSXgDurgQs2gj7wihdN6DnK7SOQbqji6DyI8voAomAe3REeZpHbYqEAOYHA5GmoYZg8xQ1M1WKi-NtpYZagxoAItc-5GjW4knqZ5BjcaUegJ5YRIWC3AKvYLTViQLw9rKv0sGndoOH0D63DnulkV6KdMWgllwL-PJR9Qz7gG7nleo5WE__md17kQwsoU31I5VbyWMUIgHv__YS38fERPW_QyC8VfRLwZo2bTzdpYNMQ6r9h8JpYtRkMwNAIiYSpgHkKXK." style="color:#001733; text-decoration:none;" target="_blank">1Z0224FE0300010616</a> <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRSAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9tpYHlgEaPURKTcU-75CHgnpDimWcIUY29TU7G0rDv6iR2O8pN8-l4HScBRc3iWCf20BLJQE72tq-oLaMlOZ9avv71tCvg70QKkyqcYXU2R1hukRUiXy5Hcl1wHHRRCCcBrdbSV-IfWYwgq1OalYKA1NswbOkp2-e_gnVVBmSwR9nhCqJIVoAYHjSXgDurgQs2gj7wihdN6DnK7SOQbqji6DyI8voAomAe3REeZpHbYqEAOYHA5GmoYZg8xQ1M1WKi-NtpYZagxoAItc-5GjW4knqZ5BjcaUegJ5YRIWC3AKvYLTViQLw9rKv0sGndoOH0D63DnulkV6KdMWgllwL-PJR9Qz7gG7nleo5WE__md17kQwsoU31I5VbyWMUIgHv__YS38fERPW_QyC8VfRLwZo2bTzdpYNMQ6r9h8JpYtRkMwNAIiYSpgHkKXK." target="_blank"><img alt="TRACK MY PACKAGE" border="0" height="22" src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_obu/includes/trackshipment/images/kmarttrackbutton.jpg" style="vertical-align:middle;" width="167" /></a><br />
+                            <br />
+                           <strong>Please note</strong> it may take 24 hours for your tracking number to return any information. You will receive a separate package for each tracking number.<br /><br /></td>
+                        </tr>
+                     </tbody>
+                  </table>
+<!-- closing copy -->
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="left" class="15px Bpad15 Bpad25 Lpad5" style="font-size:17px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:25px 0 35px 5px; -webkit-text-size-adjust:none;" valign="middle">  You'll receive a separate package for each tracking number in your order and it may take up to 24 hours for your tracking number to return any information.<br />
+                           <br />
+                            We hope you enjoy your items!<br />
+                           <br />
+                           Thank you for choosing us,<br />
+                           Your Kmart Team</td>
+                        </tr>
+                     </tbody>
+                  </table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tbody>
+      <tr>
+         <td align="center" bgcolor="#eeeeee" height="10" style="font-size:1px; line-height:1px;" valign="top">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+               <tr>
+                  <td align="center" bgcolor="#eeeeee" height="10" style="font-size:1px; line-height:1px;" valign="top"></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="left" class="25px stack Tpad35 Bpad0" style="font-size:27px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:20px 0px 20px 0px; -webkit-text-size-adjust:none;" valign="middle">Order Details</td>
+                           <td align="right" class="stack left Tpad5" style="font-size:15px; color:#005ccc; font-family:Arial, Helvetica, sans-serif; text-align:right; padding:20px 0px 20px 0px; -webkit-text-size-adjust:none;" valign="bottom"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRSTT&amp;_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatAa5ppYltYEZBeV8oEfN5aFK4UpT7ok1ZvtPYNc0wqtyU4KV-l9ydgPoU9et0i1QAIO_WCqpmusza7I-NmhdJ5lJYpdkQVJNzV2v3jP74Ha30zqQqzHeOjvKG-NoN_YdXFPX5N_W3OXda4xBEE." style="color:#005ccc; text-decoration:none;">view or manage your order</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                      <table width="100%" bgcolor="#7c0505" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="headerBar" align="left" valign="middle" style="font-size:15px; color:#ffffff; background-color:#7c0505; padding:10px 13px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;">
+									SHIPMENT 
+                                    1741saint Louis st. Apt a
+</td>
+                          <td class="headerBar" align="right" valign="middle" style="font-size:15px; color:#ffffff; background-color:#7c0505; padding:10px 13px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;">
+						  <span class="hide">STATUS: </span><strong>Shipped </strong>
+                         </td>
+                        </tr>
+                      </table>
+
+<!-- detailsHeader = show -->	
+  <!-- start details header -->
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="stack" align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:10px 0px 0px 10px; -webkit-text-size-adjust:none;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="50%" align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 10px 0px; -webkit-text-size-adjust:none;">
+									<strong>Shipping Address</strong><br>
+                          
+		Emma
+		Sartin
+	<br>
+
+	<span class="no_link">1741saint Louis st. Apt a</span><br>
+	BOGALUSA, 
+	LA 
+	70427<br>
+</span>
+	<span class="no_link">654-136-4664</span>
+
+
+
+</td>
+                          <td width="50%" align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 10px 0px; -webkit-text-size-adjust:none;">
+
+
+	<strong>Order Date</strong><br>
+	Sat, Oct 08, 2016 <br><br>
+
+
+
+
+
+
+
+
+
+
+                          </td>
+                        </tr>
+                      </table>
+                          </td>
+                          <td class="stack Tpad0 Lpad10" align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:10px 0px 10px 0px; -webkit-text-size-adjust:none;">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				
+					<tr>
+						<td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 10px 0px; -webkit-text-size-adjust:none;">
+				
+                
+                
+
+													<strong>Salescheck #</strong><br>
+									<span class="no_link">78408308905000</span><br><br>
+                
+                
+					<strong>Suborder #</strong><br>
+					<span class="no_link">1425803106</span><br><br>
+					<strong>Shipping Vendor</strong><br>
+					<span class="no_link">UPS</span><br><br>
+                
+					</td>
+					 </tr>
+                      </table>
+                          </td>
+
+                        </tr>
+
+		
+                      </table>
+<!-- end details header -->
+
+                     <!-- START FIRST ITEM DETAILS -->
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td bgcolor="#ffffff" width="50%" class="stack 100percent" align="left" valign="top" style="padding:0px 0px 0px 0px;">
+						  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td bgcolor="#ffffff" class="mheaderL" align="left" valign="middle" style="font-weight:bold; color:#001733; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; font-size:13px; border-top:1px dotted #cccccc; border-bottom:1px dotted #cccccc; padding:10px 0px;">ITEM DETAILS</td>
+                        </tr>
+                      </table>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+	<td bgcolor="#ffffff" width="82" align="center" valign="middle" style="padding:10px 0px 0px 10px;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRTRT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9tpYHlgEaPURKTcU-75CHgnpNLxvIcYUI9dPg9K4UL3kmlVyj1eX5fHYfoSdHQVQw8EXHmBARGT2d-ya_xoTz1nxa046uNcWbjt-9HD8GscGUe3IkuQUPId3h0uqHgQjrKVKpRYdAHOJuRMBp96RHSJw3o1FJq8KxpVtU0QUZ-Qzm8_T1Acg0B8." style="color:#005ccc; text-decoration:none;"><img src="http://c.shld.net/rpx/i/s/i/spin/10128258/prod_1489721712" width="82" height="82" border="0" style="display:block;" /></a></td>
+
+        <td bgcolor="#ffffff" class="12px " align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:10px 5px 0px 10px; -webkit-text-size-adjust:none;">
+		<a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRTTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9tpYHlgEaPURKTcU-75CHgnpNLxvIcYUI9dPg9K4UL3kmlVyj1eX5fHYfoSdHQVQw8EXHmBARGT2d-ya_xoTz1nxa046uNcWbjt-9HD8GscGUe3IkuQUPId3h0uqHgQjrKVKpRYdAHOJuRMBp96RHSJw3o1FJq8KxpVtU0QUZ-Qzm8_T1Acg0B8." style="color:#001733; text-decoration:none;"><strong>14INCH 4-TIER SHELF UNIT - KETER</strong></a><br>
+
+	Size: 23.8 x 15.3 x 6.3&nbsp;
+	<br>
+	<br>
+		<span class="no_link">Sold by <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRSRT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQsehLbB_6w28X-yBkXtEX7Fh4CI59epqeAsresxiK1H4drNpxf590Vs5W2p_D." style="color:#005ccc; text-decoration:none;">KMART</a></span><br>
+	<a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRTWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg." style="color:#005ccc; text-decoration:none;">Kmart Return Policy</a><br>
+	Mfr# 224443.0<br>
+	Part# 010W007210363001<br>
+	KSN: 7210363<br>
+	UPC: 045989015690<br>
+
+
+
+<!-- if Items.itemgiftcardaccount?has_content>
+	Acct# {Items.itemgiftcardaccount}<br>
+</if -->
+
+
+
+
+
+
+	<br /><strong>Tracking Number:</strong> <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRTAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatBBwl30AjcomZldm6oiyIUOPF6R6GJqYEJIE-wsgWQEVHD5Q0r2fwlVXFdBt71nBZwU8rZnSDuCr6mppq5Th09lfTLtXpIVIwRL2EHZXGAESA9x-g3PZPLW9-JmytdZSted5fCzdLYIvxVBJYVD56yQpTSiHcp6qkjKjcVceP4j2Gaw5Z088PHFFA6HRKc88TnZraxm1pPHw6XEGKb7QUbiCE-hRFLYQGO-20D6LIq_JXSEslXEwmzcsKhKi1xijaw-hDnNUv5FZO6vAefqwCVXzpGgjzRXP21pBax_OHzEMBg28qjP8x7l66BvIxJ3JouacyeaXgUfqN9bvAR8o-OJUee-BqbCGJcF1kVHYl5C6awiOcpdDbohfSWU9z-dZhTHmaKPBg-XMxlgqwas72xM0LeI3JXr9Fo5kZZKQHOaeVaAVjaDaAcv_6sL2fzm-_NnQWRdGA8KlIWw-_rfMK8-vKlxZZPtglsOXwdhgKXGhEhlEqh4mBUD1pdHRXw." style="color:#005ccc; text-decoration:none;">1Z0224FE0300010616</a> 
+
+
+</td>
+                        </tr>
+                      </table></td>
+                          <td bgcolor="#ffffff" width="50%" class="stack 100percent" align="left" valign="top" style="padding:0px 0px 0px 0px;">
+						  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                           <td bgcolor="#ffffff" class="mheaderL" width="110" align="left" valign="middle" style="font-weight:bold; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; border-top:1px dotted #cccccc; font-size:13px; border-top:1px dotted #cccccc; border-bottom:1px dotted #cccccc; padding:10px 0px;">PRICE</td>
+						   <td bgcolor="#ffffff" class="mheader" width="60" align="center" valign="middle" style="font-weight:bold; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; border-top:1px dotted #cccccc; font-size:13px; border-top:1px dotted #cccccc; border-bottom:1px dotted #cccccc; padding:10px 0px;">QTY</td>
+                           <td bgcolor="#ffffff" class="mheaderR" align="right" valign="middle" style="font-weight:bold;font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; border-top:1px dotted #cccccc; font-size:13px; border-top:1px dotted #cccccc; border-bottom:1px dotted #cccccc; padding:10px 0px;">ITEM SUBTOTAL</td>
+                        </tr>
+                      </table>                   
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="Tpad10 Bpad10 Lpad10" width="110" align="left" valign="top" style="color:#666666; font-size:9px; font-family:Arial, Helvetica, sans-serif; padding:10px 0px 0px 0px; -webkit-text-size-adjust:none;">
+							<font style="font-size:13px;">17.99</font>
+						</td>
+                        <td class="Tpad10 Bpad10" bgcolor="#ffffff" width="60" align="center" valign="top" style="font-size:13px; font-weight:bold; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:10px 0px 10px 0px; -webkit-text-size-adjust:none;">1</td>
+                        <td class="Tpad10 Bpad10" bgcolor="#ffffff"align="right" valign="top" style="font-size:13px; font-weight:bold; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:10px 10px 0px 0px; -webkit-text-size-adjust:none;">17.99
+						
+						</td>
+						</tr>
+                      </table>
+					  
+                      
+					  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td bgcolor="#ffffff" class="Lpad10" align="left" valign="top" style="padding:10px 0px; -webkit-text-size-adjust:none; border-top: 2px solid #cccccc;">
+						  
+							<strong style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif;">Coupons:</strong><br>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+										<tr>
+										  <td align="left" valign="bottom" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 0px 0px; -webkit-text-size-adjust:none;">
+											Online Only! Take an EXTRA 10% off select Tools & DIY purchases Sold by Kmart!</td>
+										  <td align="right" valign="bottom" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:0px 10px 0px 0px; -webkit-text-size-adjust:none;">1.80</td>
+										</tr>
+									</table>
+							
+							
+
+                          
+                          </td>
+                        </tr>
+                      </table>
+					    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top" style="padding:20px 0px 0px 0px; -webkit-text-size-adjust:none; border-top: 2px solid #cccccc;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td bgcolor="#ffffff" class="Lpad10" align="left" valign="top" style="font-size:17px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 0px 0px; -webkit-text-size-adjust:none;">Item Total</td>
+                          <td bgcolor="#ffffff" align="right" valign="top" style="font-size:17px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 10px 0px 0px; -webkit-text-size-adjust:none;">
+								16.19
+							</td>
+                        </tr>
+                      </table>
+                          </td>
+                        </tr>
+                      </table>
+                      </td>
+                        </tr>
+            </table>
+			 <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffff" class="100percent" align="left" valign="top" height="10" style="font-size:1px; line-height:1px; padding:0px"></td></tr></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tbody>
+      <tr>
+         <td align="center" bgcolor="#eeeeee" height="10" style="font-size:1px; line-height:1px;" valign="top">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+               <tr>
+                  <td align="center" bgcolor="#eeeeee" height="10" style="font-size:1px; line-height:1px;" valign="top"></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="center" class="stack" valign="top">
+                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" style="padding:10px 0px;" valign="top">
+					  
+<!-- hero wrapper/content bin wrapper -->
+            <table class="content-bin-wrap" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top">
+                  <!-- hero -->
+                  <!-- Member + Max Free Trial -->
+                  <table class="mobi-hero-POEMSYWModule" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="block" align="center" valign="top">
+                      	<table class="mobi-hero-POEMSYWModule2" width="320" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="top"><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_memberbanner/OrderConfirmation_MemberBanner.images/POEM_SYW_Modules_Desktop_Sears_R1_03.jpg" width="300" height="20" alt="SHOP YOUR WAY&reg;" border="0" style="display:block;" /></td>
+                          </tr>
+                        </table>
+                        <table class="mobi-hero-POEMSYWModule2" width="320" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#001733; -webkit-text-size-adjust:none; padding:0 0 10px 0; border-bottom:1px dotted #cccccc;">BASE&nbsp;Member Number Ending in 9550</td>
+                          </tr>
+                        </table>
+                        
+						
+						
+						<table class="mobi-hero-POEMSYWModule2" width="320" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#001733; -webkit-text-size-adjust:none; padding:10px 0 10px 0; border-bottom:1px dotted #cccccc;"><strong style="font-size:15px;">You earned</strong> <strong style="font-size:15px; color:#f17f21;">&#36;0.16 in points(161 points)</strong> <strong style="font-size:15px;">on this order.</strong><br /> Your earned points will be available after your order has been delivered or picked up.<a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTWDUAWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#005ccc; text-decoration:none;"><font style="color:#005ccc;">see points details</font></a></td>
+                          </tr>
+                        </table>
+
+                        <table class="mobi-hero-POEMSYWModule2" width="320" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#666666; -webkit-text-size-adjust:none; padding:10px 0 5px 0;">Points displayed are estimates only. Points earned vary based on purchase(s), offers, cancelations or subsequent modifications to your order. Expiration dates vary. Visit <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTWDUAAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg." style="color:#005ccc; text-decoration:none;"><font style="color:#005ccc;">www.shopyourway.com</font></a> for details.</td>
+                          </tr>
+                        </table>
+                        
+                      </td>
+                    </tr>
+                  </table>
+				  
+				  
+				  
+                </td>
+              </tr>
+            </table> 
+<!-- hero wrapper/content bin wrapper ends --></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                           <td align="center" class="hide" valign="top" width="20"></td>
+                           <td align="center" class="stack" valign="top">
+                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" style="padding:10px 0px;" valign="top"><!-- Start Order Summary Module -->
+<table width="308" align="center" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top">
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top"  style="padding:10px;">
+          			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+				<td align="left" valign="top" style="font-size:17px; font-weight:bold; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 15px 0px; border-bottom:1px solid #eeeeee; -webkit-text-size-adjust:none;">
+						Order Summary
+					</td>
+				</tr>
+				</table>
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;"><strong>Item Level Discounts</strong></td>
+		  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">&nbsp;</td>
+		</tr>
+	</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">Coupons</td>
+			  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">1.80</td>
+			</tr>
+		</table>
+
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; font-weight:bold; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">Merchandise Subtotal</td>
+		  <td align="right" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">1.80</td>
+		</tr>
+	</table>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;"><strong>Other Charges</strong></td>
+		  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee;-webkit-text-size-adjust:none;">&nbsp;</td>
+		</tr>
+	</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">Installation</td>
+			  <td align="right" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">17.99</td>
+			</tr>
+		</table>
+
+
+
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;"><strong>Shop Your Way Points Savings</strong></td>
+		  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">&nbsp;</td>
+		</tr>
+	</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">Points Redeemed</td>
+			  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">0.14</td>
+			</tr>
+		</table>
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;"><strong>Pre-Tax Subtotal</strong></td>
+		  <td align="right" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">16.05</td>
+		</tr>
+	</table>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;"><strong>Shipping & Delivery</strong></td>
+		  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">&nbsp;</td>
+		</tr>
+	</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">Shipping</td>
+			  <td align="right" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">23.00</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">Shop Your Way MAX Savings</td>
+			  <td align="right" valign="top" style="font-size:13px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">23.00</td>
+			</tr>
+		</table>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;"><strong>Sales Tax</strong></td>
+		  <td align="right" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">1.68</td>
+		</tr>
+	</table>
+
+
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	  <td align="left" valign="top" style="font-size:25px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">Total Due</td>
+	  <td align="right" valign="top" style="font-size:25px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; border-top:1px solid #eeeeee; -webkit-text-size-adjust:none;">17.73</td>
+	</tr>
+  </table>
+<table width="274" align="center" bgcolor="#eeecec" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td align="center" valign="top" style="font-size:15px; color:#001733; background-color:#eeecec; font-family:Arial, Helvetica, sans-serif; padding:15px 25px; -webkit-text-size-adjust:none;">You saved <span style="color:#d01833;">24.80</span> on this order</td>
+		</tr>
+	  </table>  
+
+
+
+
+	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td align="center" valign="top"  style="padding:10px;">
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						  <td align="center" valign="top">
+					
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td align="left" valign="top" style="font-size:17px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:15px 0px 20px 0px; -webkit-text-size-adjust:none;">How You Paid</td>
+			<td align="right" valign="top" style="font-size:17px; color:#d01833; font-family:Arial, Helvetica, sans-serif; padding:15px 0px 20px 0px; -webkit-text-size-adjust:none;">&nbsp;</td>
+		</tr>
+	</table>
+						
+						
+	
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td width="60%" align="left" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">
+		  Total Charged to PayPal 
+					account
+				 <span class="noLink2">vallewdub@gmail.com</span><br />
+		  
+		  
+		  
+		  </td>
+		  <td align="right" valign="top" style="font-size:13px; color:#001733; font-family:Arial, Helvetica, sans-serif; padding:5px 0px; -webkit-text-size-adjust:none;">17.73</td>
+		</tr>
+		</table>
+
+								
+		</td>
+		</tr>
+	</table>
+	</td>
+	 </tr>
+</table>
+
+ 
+                      
+                          </td>
+                          </tr>
+                          </table></td>
+                        </tr>
+                      </table>
+<!-- End Order Summary Module --></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				 <tbody>
+					<tr>
+					   <td align="center" style="font-size:15px; color:#001733; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; padding:5px 0px 15px 0px;" valign="top">Receipt dated within 30 days required for most returns & exchanges. <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DURYWCTT&amp;_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#001733; -webkit-text-size-adjust:none; text-decoration:underline;">Click here</a> for complete policy & exceptions.</td>
+					</tr>
+				 </tbody>
+				</table>				 
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="left" class="blueheader" style="font-size:15px; color:#ffffff; background-color:#7c0505; padding:10px 13px; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;" valign="middle">SAVE MORE NEXT TIME YOU SHOP</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <table border="0" cellpadding="0" cellspacing="0" class="hide" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="center" bgcolor="#ffffff" class="hide" height="20" style="font-size:1px; line-height:1px;" valign="top"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td class="stack" align="center" valign="top">
+		  <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRURT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_promomodule/images/KM_Guest_Promo_01_01.jpg" alt="Get the Kmart Mobile App" width="318" height="47" style="display:block;" border="0" /></a></td>
+                            </tr>
+                          </table>
+                            <table border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRUTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg."><img class="half" src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_promomodule/images/KM_Guest_Promo_01_02_01.jpg" alt="ANDROID APP ON Google play" width="159" height="46" style="display:block;" border="0" /></a></td>
+                                <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRUWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg."><img class="half" src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_promomodule/images/KM_Guest_Promo_01_02_02.jpg" alt="Available on the App Store" width="159" height="46" style="display:block;" border="0" /></a></td>
+                              </tr>
+                          </table>
+                            <table border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRURT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_promomodule/images/KM_Guest_Promo_01_03.jpg" alt="learn more" width="318" height="47" style="display:block;" border="0" /></a></td>
+                              </tr>
+                          </table>
+		  </td>
+		  <td width="24" class="hide" align="center" valign="top"><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_promomodule/images/Promo_Divider.jpg" width="24" height="140" border="0" style="display:block;" /></td>
+			<td class="stack Tborder5" align="center" valign="top">	
+					<!-- Start Member + MAX Promo Module -->
+							 <a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRUAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs2Bw_4EV6FPCp133l0CJ9todN3BkNlMZ6JmAU4p-u9ViGeDi_PidjEl2BR8z7cSDxP4GrKuF-08Cq-cDdchiXg."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/transactional_dynamiccontent/orderconfirmation_promomodule/images/Member_MAX_02.jpg" alt="SHOP YOUR WAY(R) partners | Want More Points? | Link your MasterCard or Visa and earn when you shop thousands of top retailers! | learn more" width="318" height="140" style="display:block;" border="0" /></a>
+					<!-- End Member + MAX Promo Module -->
+
+			</td>
+		</tr>
+</table></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <!-- *** CAMPAIGN CONTENT ends --></td>
+               </tr>
+            </tbody>
+         </table>
+         <!-- hero wrapper/content bin wrapper ends --><!-- Footer -->  
+ <table class="footer" width="700" align="center" border="0" cellspacing="0" cellpadding="0">
+  	<tr>
+    	<td align="center" valign="top" style="background:#ffffff; border-top:3px solid #aeaeae;">
+			<table class="footer" width="700" border="0" cellspacing="0" cellpadding="0">
+  				<tr>
+    				<td align="center" valign="middle" style="padding:26px 0px 26px 0px; border-bottom:1px solid #e2e2e2">
+                	<table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="hide" align="center" valign="top" width="21">&nbsp;</td>
+                      <td class="block Bpad" align="center" valign="middle" style="vertical-align:middle;">
+                      	<table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRUCT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/KmartBottomLogo2015_01.gif" width="180" height="43" alt="Kmart" border="0" style="display:block;" /></a></td>
+                          </tr>
+                        </table>
+                        <table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRWRT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/KmartBottomLogo2015_02.gif" width="180" height="32" alt="A SHOP YOUR WAY&reg; PARTNER" border="0" style="display:block;" /></a></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="hide" align="center" valign="middle" style="vertical-align:middle;"><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/Bar2015.gif" width="101" height="75" alt="|" border="0" style="display:block;" /></td>
+                      <td class="block" align="center" valign="middle" style="vertical-align:middle;">
+                      	<table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center" valign="top">
+                            	<table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 10px 0;"><strong>Kmart</strong></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 7px 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRWTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">Privacy Policy</a></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 0 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRWWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">Store Finder</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td class="vspacer" align="center" valign="top" width="50">&nbsp;</td>
+                            <td align="center" valign="top">
+                            	<table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 10px 0;"><strong>SHOP YOUR WAY</strong></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 7px 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRWAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">Your Account</a></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 7px 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRWCT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">Offers and Rewards</a></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 0 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRYRT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">About</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td class="vspacer" align="center" valign="top" width="50">&nbsp;</td>
+                            <td align="center" valign="top">
+                            	<table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 10px 0;"><strong>SUPPORT</strong></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 7px 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRYTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">Contact Us</a></td>
+                                </tr>
+                                <tr>
+                                	<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#acacac; -webkit-text-size-adjust:none; padding:0 0 7px 0;"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRYWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E." style="color:#acacac; text-decoration:none;">Questions?</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="hide" align="center" valign="top" width="50">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+				</tr>
+			</table>
+        
+		   <table class="footer" width="700" border="0" cellspacing="0" cellpadding="0">
+  				<tr>
+    				<td align="center" valign="middle" style="padding:22px 0px 22px 0px; border-bottom:1px solid #e2e2e2">
+                	<table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="hide" align="center" valign="top" width="171">&nbsp;</td>
+                      <td class="block" align="center" valign="top">
+                      	<table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRYAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/SYW2015.gif" width="24" height="33" border="0" style="display:block;" /></a></td>
+                            <td align="center" valign="top" width="10">&nbsp;</td>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRYCT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/facebook2015.gif" width="24" height="33" border="0" style="display:block;" /></a></td>
+                            <td align="center" valign="top" width="10">&nbsp;</td>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRART&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/twitter2015.gif" width="24" height="33" border="0" style="display:block;" /></a></td>
+                            <td align="center" valign="top" width="10">&nbsp;</td>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRATT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/instagram2015.gif" width="24" height="33" border="0" style="display:block;" /></a></td>
+                            <td align="center" valign="top" width="10">&nbsp;</td>
+                            <td align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRAWT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/youtube2015.gif" width="24" height="33" border="0" style="display:block;" /></a></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="hide" align="center" valign="top" width="33">&nbsp;</td>
+                      <td class="block" align="center" valign="top"><a href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRAAT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E."><img src="https://static.cdn.responsys.net/i2/responsysimages/kmartri2/contentlibrary/transactional_production/global/TemplateMacro2016/images/downloadapp2015.gif" width="143" height="33" alt="DOWNLOAD OUR APP" border="0" style="display:block;" /></a></td>
+                      <td class="hide" align="center" valign="top" width="171">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+  				</tr>
+			</table>
+			
+			<table class="footer" width="650" border="0" cellspacing="0" cellpadding="0">
+  				<tr>
+    				<td class="font10 textCenter" align="center" valign="bottom" style="font-size:10px; color:#acacac; font-family:Arial, Helvetica, sans-serif; padding:26px 0px 20px 0px; -webkit-text-size-adjust:none;">
+								Please add <a href="mailto:kmart@account.kmart.com" style="color:#acacac;">kmart@account.kmart.com</a> to your address book to ensure our emails reach your inbox.<br /><br />
+								
+								<!-- START ADDITIONAL LEGAL -->
+								 <!-- END ADDITIONAL LEGAL -->
+								
+								<strong>Please do not reply to this email. If you have questions or concerns, please visit <a style="color:#acacac;" href="https://kmart.rsys2.net/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGi4FuH2lujzcj3RvJzeeE6zarT3N2zgGlLBvhmqozdzgCzbozaKngeFHAJEmVXtpKX%3DTUWRYTT&_ei_=Et0LivBdelidy3_ISb2xa0aq-XQ8caY1d0o-_wX-SlKKREhrqScOSdjO2G4TOQRAh-Hjy0ltPVGiXRFCESmJatCupdnWaGARMn6H0mAWCbo8O9BLGnf0JHC2vlFKbUdQs0CUlf9dk-Uny9shsJXaaMvArOVvNE0ye_E.">customer service</a>.</strong><br /><br />
+                                &copy; 2016 Sears Brands, LLC, <span class="footerNoStyle">3333 Beverly Road, Hoffman Estates, IL 60179</span>. All Rights Reserved.<br /><span style="color:#ffffff">[TransKMTShipConfMAXFreeShip]</span>
+					</td>
+  				</tr>
+			</table>
+        </td>
+     </tr>
+ </table>
+ <!-- Footer End -->	  
+  <!-- footer wrapper ends --><map name="Map"><area coords="466,180,575,198" href="http://www.sears.com" shape="rect" /></map></td>
+      </tr>
+   </tbody>
+</table>
+</body>
+</html>
+
+
+
