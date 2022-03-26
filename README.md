@@ -5,4 +5,4 @@
 * Функциите, които се препоръчват да се използват с в __src/EMail.js__. Там е създаден __клас Email__, с посочените функции вътре(__getFrom(__), __setName()__, __setStreet()__ , __setTrakingNumber()__, __setCarrier()__).
 
 
-* ?????????: __"check out src/ParserUtils.js for an API for traversing the HTML nodes"__.
+*  __"check out src/ParserUtils.js for an API for traversing the HTML nodes"__.??????????
